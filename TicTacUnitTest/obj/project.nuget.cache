@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "celKzBxEyH81U2/kW6oxLECzDjAcyILqNObMsCR+5uHXbK+hqT3egvgIctOlTzVIAvSDpROwvauMqAVTrk9AXg==",
+  "dgSpecHash": "Ddx8gGUgdMFjCgh0OG4GwilA5hnr75PEsTc6LTg9O5/QgvCIXCfFR/vXbAYNM9d509tTsTQzNtdo4hFXW0edJg==",
   "success": true,
-  "projectFilePath": "F:\\Dev\\C#\\TicTacUnitTest\\TicTacUnitTest.csproj",
+  "projectFilePath": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacUnitTest\\TicTacUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automoq\\2.0.0\\automoq.2.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",

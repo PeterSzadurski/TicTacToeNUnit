@@ -4721,11 +4721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Dev\\C#\\TicTacUnitTest\\TicTacUnitTest.csproj",
+      "projectUniqueName": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacUnitTest\\TicTacUnitTest.csproj",
       "projectName": "TicTacUnitTest",
-      "projectPath": "F:\\Dev\\C#\\TicTacUnitTest\\TicTacUnitTest.csproj",
+      "projectPath": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacUnitTest\\TicTacUnitTest.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Dev\\C#\\TicTacUnitTest\\obj\\",
+      "outputPath": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacUnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4745,8 +4745,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\Dev\\C#\\TicTacToeLogic\\TicTacToeLogic.csproj": {
-              "projectPath": "F:\\Dev\\C#\\TicTacToeLogic\\TicTacToeLogic.csproj"
+            "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacToeLogic\\TicTacToeLogic.csproj": {
+              "projectPath": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacToeLogic\\TicTacToeLogic.csproj"
             }
           }
         }

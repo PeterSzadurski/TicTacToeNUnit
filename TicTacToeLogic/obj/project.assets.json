@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Dev\\C#\\TicTacToeLogic\\TicTacToeLogic.csproj",
+      "projectUniqueName": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacToeLogic\\TicTacToeLogic.csproj",
       "projectName": "TicTacToeLogic",
-      "projectPath": "F:\\Dev\\C#\\TicTacToeLogic\\TicTacToeLogic.csproj",
+      "projectPath": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacToeLogic\\TicTacToeLogic.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\Dev\\C#\\TicTacToeLogic\\obj\\",
+      "outputPath": "F:\\Dev\\C#\\TicTacToeNUnit\\TicTacToeLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
