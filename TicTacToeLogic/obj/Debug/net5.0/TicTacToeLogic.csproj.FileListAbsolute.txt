@@ -10,3 +10,15 @@ F:\Dev\C#\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.csproj.CoreCompileInput
 F:\Dev\C#\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.dll
 F:\Dev\C#\TicTacToeLogic\obj\Debug\net5.0\ref\TicTacToeLogic.dll
 F:\Dev\C#\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.pdb
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\bin\Debug\net5.0\TicTacToeLogic.deps.json
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\bin\Debug\net5.0\TicTacToeLogic.dll
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\bin\Debug\net5.0\ref\TicTacToeLogic.dll
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\bin\Debug\net5.0\TicTacToeLogic.pdb
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.csprojAssemblyReference.cache
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.AssemblyInfoInputs.cache
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.AssemblyInfo.cs
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.csproj.CoreCompileInputs.cache
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.dll
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\ref\TicTacToeLogic.dll
+F:\Dev\C#\TicTacToeNUnit\TicTacToeLogic\obj\Debug\net5.0\TicTacToeLogic.pdb

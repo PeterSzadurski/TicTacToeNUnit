@@ -1,10 +1,5 @@
 ﻿using AutoMoq;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TicTacToeLogic.Classes;
 
 namespace TicTacUnitTest
@@ -40,7 +35,7 @@ namespace TicTacUnitTest
         }
         [Test]
         // Vertical
-        [TestCase(0, 0, 0, 1, 0, 2, TestName ="Left Vertical Win")]
+        [TestCase(0, 0, 0, 1, 0, 2, TestName = "Left Vertical Win")]
         [TestCase(1, 0, 1, 1, 1, 2)]
         [TestCase(2, 0, 2, 1, 2, 2)]
         // Horizontal

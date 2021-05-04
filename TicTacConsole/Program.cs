@@ -15,21 +15,15 @@ namespace TicTacConsole
             bool validInput = false;
             bool restartGame = false;
             Game game = new Game();
-            bool onGoingGame = true;
-            while (onGoingGame)
+            while (true)
             {
 
                 DrawBoard(game.GetBoard());
                 if (gameWon)
                 {
-                    if (game.GetCurrentPlayer() == 1)
-                    {
-                        Console.WriteLine("X wins!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("O wins!");
-                    }
+
+                    Console.WriteLine("{0} wins!", CharAssigner(game.GetCurrentPlayer()));
+
                     Console.WriteLine("Would you like to play another round? y/n");
                     while (!restartGame)
                     {

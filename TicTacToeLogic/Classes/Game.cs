@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TicTacToeLogic.Interfaces;
+﻿using TicTacToeLogic.Interfaces;
 
 namespace TicTacToeLogic.Classes
 {
@@ -63,7 +58,7 @@ namespace TicTacToeLogic.Classes
             }
 
             // Vertical Check
-            if (    
+            if (
                 _GameArray[_RecentValidX, 0] == _CurrentPlayer &&
                 _GameArray[_RecentValidX, 1] == _CurrentPlayer &&
                 _GameArray[_RecentValidX, 2] == _CurrentPlayer
