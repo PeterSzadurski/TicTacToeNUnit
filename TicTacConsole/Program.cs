@@ -8,6 +8,7 @@ namespace TicTacConsole
         static void Main(string[] args)
         {
             bool gameWon = false;
+            bool gameTie = false;
             int pos1 = 0;
             int pos2 = 0;
             bool parseResult1 = false;
@@ -19,12 +20,18 @@ namespace TicTacConsole
             {
 
                 DrawBoard(game.GetBoard());
-                if (gameWon)
+                if (gameWon || gameTie)
                 {
-
-                    Console.WriteLine("{0} wins!", CharAssigner(game.GetCurrentPlayer()));
-
+                    if (gameWon)
+                    {
+                        Console.WriteLine("{0} wins!", CharAssigner(game.GetCurrentPlayer()));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Draw!");
+                    }
                     Console.WriteLine("Would you like to play another round? y/n");
+
                     while (!restartGame)
                     {
                         string input = Console.ReadLine();
@@ -56,7 +63,8 @@ namespace TicTacConsole
                     while (!validInput)
                     {
                         string[] input = Console.ReadLine().Split(" ");
-                        try {
+                        try
+                        {
                             parseResult1 = int.TryParse(input[0], out pos1);
                             parseResult2 = int.TryParse(input[1], out pos2);
                         }
@@ -82,7 +90,8 @@ namespace TicTacConsole
                         {
                             game.UpdateSquare(pos1, pos2);
                             gameWon = game.DidLastMoveWin();
-                            if (!gameWon)
+                            gameTie = game.DidLastMoveDraw();
+                            if (!gameWon && !gameTie)
                             {
                                 game.SetNextTurn();
                             }

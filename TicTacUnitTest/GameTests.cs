@@ -1,5 +1,4 @@
-﻿using AutoMoq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using TicTacToeLogic.Classes;
 
 namespace TicTacUnitTest
@@ -7,13 +6,11 @@ namespace TicTacUnitTest
     [TestFixture]
     public class GameTests
     {
-        private AutoMoqer _Moker;
         private Game _Game;
         [SetUp]
         public void SetUp()
         {
-            _Moker = new AutoMoqer();
-            _Game = _Moker.Create<Game>();
+            _Game = new Game();
         }
         [Test]
         public void SetNextTurnTest()
@@ -53,6 +50,27 @@ namespace TicTacUnitTest
             _Game.UpdateSquare(x2, y2);
             _Game.UpdateSquare(x3, y3);
             Assert.That(_Game.DidLastMoveWin(), Is.EqualTo(true));
+        }
+        [Test]
+        public void DidLastMoveDrawTestSuccess()
+        {
+            _Game.UpdateSquare(1, 0);
+            _Game.UpdateSquare(1, 1);
+            _Game.UpdateSquare(2, 1);
+            _Game.UpdateSquare(0, 2);
+
+
+            _Game.SetNextTurn();
+            _Game.UpdateSquare(0, 0);
+            _Game.UpdateSquare(2, 0);
+            _Game.UpdateSquare(0, 1);
+            _Game.UpdateSquare(1, 2);
+            _Game.UpdateSquare(2, 2);
+
+
+            Assert.That(_Game.DidLastMoveDraw(), Is.EqualTo(true));
+
+
         }
     }
 }

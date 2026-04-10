@@ -12,6 +12,7 @@ namespace TicTacToeLogic.Interfaces
         bool UpdateSquare(int x, int y);
         void SetNextTurn();
         bool DidLastMoveWin();
+        bool DidLastMoveDraw();
         int GetCurrentPlayer();
     }
 }

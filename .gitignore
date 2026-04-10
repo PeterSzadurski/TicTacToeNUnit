@@ -17,7 +17,6 @@
 mono_crash.*
 
 # Build results
-TicTacUnitTest/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

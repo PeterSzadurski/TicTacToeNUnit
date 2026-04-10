@@ -8,6 +8,8 @@ namespace TicTacToeLogic.Classes
         private int _CurrentPlayer;
         private int _RecentValidX;
         private int _RecentValidY;
+        private int _MaxFilledSquares;
+        private int _FilledSquares;
 
         public Game()
         {
@@ -15,6 +17,8 @@ namespace TicTacToeLogic.Classes
             _CurrentPlayer = 1;
             _RecentValidX = 0;
             _RecentValidY = 0;
+            _MaxFilledSquares = 3 * 3;
+            _FilledSquares = 0;
         }
 
         public int[,] GetBoard()
@@ -36,6 +40,7 @@ namespace TicTacToeLogic.Classes
                 _RecentValidY = y;
                 _RecentValidX = x;
                 result = true;
+                _FilledSquares++;
             }
             return result;
         }
@@ -67,7 +72,7 @@ namespace TicTacToeLogic.Classes
                 return true;
             }
 
-            // Check Top Lef Diagonal
+            // Check Top Left Diagonal
             if (
                 _GameArray[0, 0] == _CurrentPlayer &&
                 _GameArray[1, 1] == _CurrentPlayer &&
@@ -87,6 +92,11 @@ namespace TicTacToeLogic.Classes
             }
 
             return false;
+        }
+
+        public bool DidLastMoveDraw()
+        {
+            return !DidLastMoveWin() && _FilledSquares == _MaxFilledSquares;
         }
     }
 }
