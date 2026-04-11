@@ -1,6 +1,10 @@
 # TicTacToeNUnit + (Docker + GitHub Actions): Scopecreep Edition
 
+![CI](https://github.com/PeterSzadurski/TicTacToeNUnit/workflows/CI/badge.svg)
+[![Docker Hub](https://img.shields.io/docker/pulls/peterszadurski/tictactoenunit)](https://hub.docker.com/r/peterszadurski/tictactoenunit)
+
 A very simple C# CLI built to demonstrate complete unit test coverage.
+This project was originally made on May 3rd 2021 for the sole purpose of learning unit testing. The new commits are for adding GitHub piplelines and docker support.
 
 ## Why TicTacToe?
 TicTacToe is a solved game. It's possible to come up with all the possible test cases quickly.
