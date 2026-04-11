@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS test
+
+WORKDIR /src
+
+COPY Solution.sln .
+
+# copy projects first
+COPY TicTacConsole/TicTacConsole.csproj TicTacConsole/
+COPY TicTacToeLogic/TicTacToeLogic.csproj TicTacToeLogic/
+COPY TicTacUnitTest/TicTacUnitTest.csproj TicTacUnitTest/
+
+
+# nuget packages
+RUN dotnet restore
+
+# The rest of the source code
+COPY . .
+
+ENTRYPOINT [ "dotnet", "test" "--logger;console;verbosity=normal" ]
