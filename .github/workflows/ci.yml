@@ -1,0 +1,34 @@
+name: CI
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout
+              uses: actions/checkout@4
+
+            - name: build test image
+              run: docker build -f Dockerfile.test -t tictactoe-tests .
+
+            - name: run tests
+              run: docker run --rm tictactoe-tests
+
+    build:
+        needs: test
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout
+              uses: actions/checkout@4
+
+            - name: build app image
+              run: docker build -t tictactoe .
+            
+
