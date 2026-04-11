@@ -12,13 +12,13 @@ Since the initial scope of this project was so simple. It made it very easy to a
 - TicTacConsole: CLI TicTacToe Game
 - TicTacUnitTest: NUnit tests for game logic. Win/draw detection, input validation, turn management. 
 
-## Running The Program
-``
+## Running The Program (Docker)
+```
 git clone https://github.com/PeterSzadurski/TicTacToeNUnit
 cd TicTacToeNUnit
 docker build -t tictactoe .
 docker run -it tictactoe
-``
+```
 
 ## License
 [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
