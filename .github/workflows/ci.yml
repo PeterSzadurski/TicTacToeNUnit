@@ -12,7 +12,7 @@ jobs:
 
         steps:
             - name: checkout
-              uses: actions/checkout@4
+              uses: actions/checkout@v6
 
             - name: build test image
               run: docker build -f Dockerfile.test -t tictactoe-tests .
@@ -26,7 +26,7 @@ jobs:
 
         steps:
             - name: checkout
-              uses: actions/checkout@4
+              uses: actions/checkout@v6
 
             - name: build app image
               run: docker build -t tictactoe .
