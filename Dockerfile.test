@@ -16,4 +16,4 @@ RUN dotnet restore
 # The rest of the source code
 COPY . .
 
-ENTRYPOINT [ "dotnet", "test" "--logger;console;verbosity=normal" ]
+ENTRYPOINT [ "dotnet", "test", "--logger;console;verbosity=normal" ]
